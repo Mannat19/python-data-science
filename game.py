@@ -3,12 +3,12 @@ import pgzrun
 music.play('ts')
 music.set_volume(5)
 
-b=Rect((50,50),(50,25))
+b=Actor('icecream',(50,50))
 vx,vy=3,2
 
 def draw():
     screen.fill('purple')
-    screen.draw.filled_rect(b,'pink')
+    b.draw()
 
 def update():
     global vx,vy
